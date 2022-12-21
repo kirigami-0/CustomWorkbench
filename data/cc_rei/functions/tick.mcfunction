@@ -5,5 +5,3 @@ execute as @e[predicate=cc_rei:on_flame_iron] at @s if block ~ ~-1 ~ crafting_ta
 execute as @e[predicate=cc_rei:on_flame_barrir] at @s if block ~ ~-1 ~ barrel[open=true] run function cc_rei:open_barrel/ui_set
 # クラフター削除
 execute as @e[predicate=cc_rei:on_flame_barrir] at @s unless block ~ ~-1 ~ barrel run function cc_rei:break_cc/reset_cc_rei
-
-
