@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "cc_rei:player_install/install"
+    "function": "cc_rei:farst_install"
   }
 }
