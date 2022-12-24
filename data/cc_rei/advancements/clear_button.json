@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "type": "minecraft:player"
+        },
+        "items": [
+          {
+            "items": [
+              "minecraft:barrier"
+            ],
+            "nbt": "{CustomModelData: 2}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "cc_rei:open_barrel/clear_ui/craft_button"
+  }
+}
