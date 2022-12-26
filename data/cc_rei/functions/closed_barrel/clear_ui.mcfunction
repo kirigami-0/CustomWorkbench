@@ -29,4 +29,4 @@
   execute as @e[predicate=cc_rei:replace_item] run data modify entity @s Item set from block ~ ~-1 ~ Items[{Slot:21b}] 
 
 # タルの中身を空にする
-execute as @s if data block ~ ~-1 ~ Items[{Slot:0b, id:"minecraft:barrier"}] run data remove block ~ ~-1 ~ Items
+execute as @s run data remove block ~ ~-1 ~ Items

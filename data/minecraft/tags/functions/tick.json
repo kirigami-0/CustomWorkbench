@@ -1,5 +1,6 @@
 {
     "values": [
-        "cc_rei:tick"
+        "cc_rei:tick",
+        "cc_rei_dev:tick"
     ]
 }
