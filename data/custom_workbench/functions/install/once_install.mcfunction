@@ -1,6 +1,8 @@
-#> cc_rei:farst_install
-# 初回のみインストール実行
-execute unless data storage cc_rei: installed run function cc_rei:world_install/install_strage
+#> custom_workbench:install/once_install
+# 初回のみインストールする
+##
+# インストールフラグがない場合にストレージをセットする
+execute unless data storage custom_workbench: installed run function custom_workbench:install/set_storage
 # 注意書きを読ませるために動けなくする
 effect give @s blindness 3 128 true
 effect give @s darkness 3 1 true

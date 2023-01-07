@@ -18,6 +18,6 @@
     }
   },
   "rewards": {
-    "function": "cc_rei:open_barrel/clear_ui/craft_button"
+    "function": "custom_workbench:on_click/clear_button"
   }
 }
