@@ -3,7 +3,6 @@
 ##
 # レシピを一つ取得する
 data modify storage custom_workbench: _.recipe set from storage custom_workbench: _.recipeArrey[-1]
-tellraw @a [{"nbt":"_.recipeArrey[-1]","storage":"custom_workbench:"}] 
 # 比較する
 execute store result storage custom_workbench: _.missmatch byte 1 run data modify storage custom_workbench: _.recipe.recipe merge from storage custom_workbench: items
 # 見つかれば結果をセットする
@@ -11,5 +10,4 @@ execute if data storage custom_workbench: {_:{missmatch: 0b}} run function custo
 # 現在チェックしたレシピを削除する
 execute if data storage custom_workbench: {_:{missmatch: 1b}} run data remove storage custom_workbench: _.recipeArrey[-1]
 # 見つかるまでループする
-# tellraw @a [{"nbt":"_.missmatch","storage":"custom_workbench:"}] 
 execute unless data storage custom_workbench: {_:{recipeArrey: []}} if data storage custom_workbench: {_: {missmatch: 1b}} run function custom_workbench:crafting/search_shaped

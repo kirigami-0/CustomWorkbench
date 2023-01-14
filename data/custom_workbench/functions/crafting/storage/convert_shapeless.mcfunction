@@ -12,5 +12,10 @@ execute if data storage custom_workbench: items.1.2 run data modify storage cust
 execute if data storage custom_workbench: items.2.0 run data modify storage custom_workbench: _.items prepend from storage custom_workbench: items.2.0
 execute if data storage custom_workbench: items.2.1 run data modify storage custom_workbench: _.items prepend from storage custom_workbench: items.2.1
 execute if data storage custom_workbench: items.2.2 run data modify storage custom_workbench: _.items prepend from storage custom_workbench: items.2.2
-# データをコピーし直す
-data modify storage custom_workbench: items set from storage custom_workbench: _.items
+
+data modify storage custom_workbench: _.countArr set from storage custom_workbench: _.items
+
+function custom_workbench:crafting/storage/set
+# 使用したデータを削除する
+data remove storage custom_workbench: _.items
+data remove storage custom_workbench: _.shapeless
