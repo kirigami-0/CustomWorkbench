@@ -1,8 +1,10 @@
-#> cc_rei:set_cc/replace_block
+#> custom_workbench:base/replace_block
+# カスタム作業台を設置する
+##
 # マーカーを設置する
-summon marker ~ ~-1 ~ {Tags:["cc_rei_base"]}
+summon marker ~ ~-1 ~ {Tags:["custom_workbench_base"]}
 # 額縁をキル
-execute as @e[type=item_frame, limit=1, sort=nearest] at @e[tag=cc_rei_base] run kill @s
+execute as @e[type=item_frame, limit=1, sort=nearest] at @e[tag=custom_workbench_base] run kill @s
 # 作業台を樽に置き換える
 setblock ~ ~-1 ~ barrel[facing=up]{CustomName:'{"text":"強化作業台"}'} replace
 # 不可視の額縁をセットする

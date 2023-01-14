@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "cc_rei:player_install/install"
+    "function": "custom_workbench:install/once_install"
   }
 }
