@@ -3,6 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:item_frame",
-    "nbt": "{Item: {id: \"minecraft:barrier\", Count: 1b, tag: {CustomModelData: 1, display: {Name: '{\"text\":\"強化作業台\"}'}}}}"
+    "nbt": "{Item: {id: \"minecraft:barrier\", Count: 1b, tag: {CustomModelData: 1}}, Tags:[\"custom_workbench\"]}"
   }
 }
